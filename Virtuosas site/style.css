@@ -74,12 +74,12 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: row;
-    gap: 64px;
+    gap: 4.44vw;
 }
 .item-listamenu{
     text-decoration: none;
     color: white;
-    font-size: 20px;
+    font-size: 1.4vw;
 }
 
 
@@ -99,11 +99,32 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-size: cover;
     align-items: flex-end;
     background-image: url('src/Group\ 12.png');
     font-family: 'Bebas Neue';
     color: #E665A5;
-    height: 232px;
+    height: 16.11vw;
+}
+.container-cronometrodiaslinha{
+    display: flex;
+    flex-direction: row;
+    font-size: 5vw;
+}
+.container-cronometrohoraslinha{
+ font-size: 10vw;
+}
+.container-cronometrodiasehoras{
+    display: flex;
+    flex-direction: column;
+}
+.faltamtexto{
+    color: white;
+}
+.container-cronometrotexto{
+    color: white;
+    font-size: 40px;
+    padding-bottom: 20px;
 }
 .barra-container {
     width: 80%;
@@ -139,13 +160,13 @@ body{
     display: flex;
     flex-direction: column;
     text-decoration: none;
-    font-size: 36px;
+    font-size: 2.5vw;
     justify-content: center;
     align-items: center;
-    height: 100px;
-    width: 596px;
+    height: 6.94vw;
+    width: 41.38vw;
     background-color: #E665A5;
-    border-radius: 8px;
+    border-radius: 0.55vw;
     color: white;
     font-family: 'Bebas Neue';
 }
@@ -176,6 +197,15 @@ body{
     display: flex;
     flex-direction: row;
 }
+@media (max-width: 1120px) {
+    .container-periodonome {
+        font-size: 1.66vw;
+    }
+    .container-periodoinfo {
+        font-size: 3.33vw;
+    }
+
+}
 .container-infoeventoendereco{
     display: flex;
     flex-direction: row;
@@ -184,30 +214,7 @@ body{
     margin-top: 12px;
     align-self: flex-end;
 }
-.container-instagramtotal{
-    display: flex;
-    flex-direction: row;
-}
-.container-cronometrodiaslinha{
-    display: flex;
-    flex-direction: row;
-    font-size: 72px;
-}
-.container-cronometrohoraslinha{
- font-size: 144px;
-}
-.container-cronometrodiasehoras{
-    display: flex;
-    flex-direction: column;
-}
-.faltamtexto{
-    color: white;
-}
-.container-cronometrotexto{
-    color: white;
-    font-size: 40px;
-    padding-bottom: 20px;
-}
+
 
 
 
@@ -234,20 +241,23 @@ body{
     height: 305px;
     margin: 10px;
     color: #E665A5;
+    
     background-color: #FFE8F0;
     border-radius: 8px;
 }
 .container-titulorosa{
     font-size: 32px;
-    padding: 0 52px 0 52px;
+    padding: 0 3.61vw 0 3.61vw;
     color: #E665A5;
     margin-bottom: 12px;
+    font-size: 2.22vw;
     
 }
 .container-textorosa{
     font-size: 16px;
     text-align: justify;
-    padding: 0 52px 0 52px;
+    padding: 0 3.61vw 0 3.61vw;
+    font-size: 1.11vw;
 }
 
 
@@ -255,8 +265,15 @@ body{
 .container-chegar{
     display: flex;
     flex-direction: row;
-    gap: 16px;
+    gap:1.11vw;
     width: 80%;
+}
+.container-periodoinfo2{
+
+    font-size: 3.33vw;
+    color: #CD7B0F;
+    padding: 0 3.61vw 0 3.61vw;
+
 }
 .container-chegartexto{
     background-color: #FFE8F0;
@@ -271,12 +288,23 @@ body{
 .container-infoeventoendereco2{
     display: flex;
     flex-direction: row;
-    font-size: 20px;
+    font-size: 1.38vw;
     color: #8B8B8B;
     margin-top: 12px;
     margin-bottom: 22px;
-    padding: 0 52px 0 52px;
+    padding: 0 3.61vw 0 3.61vw;
 }
+@media (max-width: 1120px) {
+    .container-chegarmapa{
+        display: flex;
+        width: 51.11vw;
+        height: 51.11vw;
+        border:0;
+
+    }
+
+}
+
 
 
 
@@ -300,7 +328,7 @@ body{
     gap: 10%;
 }
 .container-itenslista{
-    padding: 0 52px 0 52px;
+    padding: 0 3.61vw 0 3.61vw;
     width: 45%;
 }
 ul{
@@ -413,6 +441,11 @@ ul{
 .image-container:hover .overlay {
     opacity: 1; /* Mostra a sobreposição ao passar o mouse */
 }
+.container-instagramtotal{
+    display: flex;
+    flex-direction: row;
+}
+
 
 
 
@@ -466,21 +499,10 @@ ul{
     text-decoration: none;
     font-size: 36px;
 }
-.floating-image-1 {
-    position: absolute;
-    left: 80%;
-    opacity: 0.5; /* transparência para dar um efeito mais sutil */
 
+.imagem-fundo-cravo{
+    height: 30vw;
 }
-
-.floating-image-2 {
-    position: absolute;
-    left: -10%;
-    opacity: 0.5;
-    overflow: hidden;
-}
-
-
 
 
 /* RODAPE*/
