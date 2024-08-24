@@ -62,41 +62,73 @@ body{
 
 
 /* CABEÇALHO */
-.logo-imagem{
+.logo-imagem {
     height: 60px;
 }
-.container-menu{
+.container-Head{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.container-menu {
     background-color: #E665A5;
     font-family: "Alice", serif;
     height: 40px;
+    display: flex; /* Adiciona flexbox para alinhar itens horizontalmente */
+    align-items: center; /* Alinha verticalmente o conteúdo ao centro */
+    justify-content: center; /* Centraliza o menu no desktop */
 }
-.container-menulista{
+
+/* Ícone do menu (inicialmente oculto) */
+.menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #E665A5;
+    margin: 10px 10px 0 0 ; /* Move o ícone para a extrema direita */
+}
+
+.container-menulista {
     display: flex;
     justify-content: center;
     flex-direction: row;
     gap: 4.44vw;
 }
-.item-listamenu{
+
+.item-listamenu {
     text-decoration: none;
     color: white;
     font-size: 1.4vw;
 }
 
+/* Estilos para telas menores que 786px */
 @media (max-width: 786px) {
-    .container-menu{
-
-        height: 100%;
+    .container-menu {
+        height: auto;
+        flex-direction: column; /* Alinha o conteúdo verticalmente */
     }
-    .container-menulista{
 
+    .container-menulista {
+        display: none; /* Esconde o menu inicialmente */
+
+    }
+
+    .menu-icon {
+        display: block; /* Mostra o ícone de menu */
+        position: absolute;
+        right: 20px; 
+    }
+
+    .container-menu.show .container-menulista {
+        display: flex; /* Mostra o menu ao clicar no ícone */
         flex-direction: column;
-
     }
-    .item-listamenu{
 
+    .item-listamenu {
         font-size: 16px;
+        text-align: center;
+        padding: 10px 0;
     }
-    
 }
 
 
@@ -139,9 +171,31 @@ body{
     color: white;
 }
 .container-cronometrotexto{
+    display: flex;
+    align-self: flex-end;
     color: white;
-    font-size: 40px;
-    padding-bottom: 20px;
+    font-size: 5vw;
+    padding-bottom: 1.38vw;
+}
+
+@media (max-width:496px) {
+    .container-cronometro{
+
+        height: 32vw;
+    }
+    .container-cronometrodiaslinha{
+
+        font-size: 10vw;
+    }
+    .container-cronometrohoraslinha{
+     font-size: 20vw;
+    }
+
+    .container-cronometrotexto{
+
+        font-size: 10vw;
+
+    }
 }
 .barra-container {
     width: 80%;
@@ -187,6 +241,22 @@ body{
     color: white;
     font-family: 'Bebas Neue';
 }
+@media (max-width: 786px) {
+    .button-inscr{
+        display: flex;
+        flex-direction: column;
+        text-decoration: none;
+        font-size: 24px;
+        justify-content: center;
+        align-items: center;
+        height: 60px;
+        width: 70%;
+        background-color: #E665A5;
+        border-radius: 8px;
+        color: white;
+        font-family: 'Bebas Neue';
+    }
+    }
 
 /* INFORMACOES DO EVENTO */
 
@@ -264,39 +334,18 @@ body{
     .container-infoeventoendereco{
         display: flex;
         flex-direction: row;
-        font-size: 2.0vh;
+        font-size: 2.0vw;
         color: #8B8B8B;
         margin: 10px 20px 20px 0;
         align-self: flex-end;
     }
 
 }
-@media (max-width:440px) {
-    .container-periodoinfo{
-
-        font-size:14px;
-        color: #CD7B0F;
-    
-    }
-    .container-infoeventoendereco{
-        display: flex;
-        flex-direction: row;
-        font-size: 12px;
-        color: #8B8B8B;
-        margin: 10px 20px 20px 0;
-        align-self: flex-end;
-    }
-    .container-periodonome {
-        font-size: 14px;
-    }
-
-        
-    }
 
     @media (max-width:496px) {
         .container-periodoinfo{
     
-            font-size:16px;
+            font-size:20px;
             color: #CD7B0F;
         
         }
@@ -309,13 +358,33 @@ body{
             align-self: flex-end;
         }
         .container-periodonome {
-            font-size: 16px;
+            font-size: 20px;
         }
     
             
         }
 
-
+        @media (max-width:440px) {
+            .container-periodoinfo{
+        
+                font-size:4.5vw;
+                color: #CD7B0F;
+            
+            }
+            .container-infoeventoendereco{
+                display: flex;
+                flex-direction: row;
+                font-size: 3vw;
+                color: #8B8B8B;
+                margin: 10px 20px 20px 0;
+                align-self: flex-end;
+            }
+            .container-periodonome {
+                font-size: 4.5vw;
+            }
+        
+                
+            }
 
 
 

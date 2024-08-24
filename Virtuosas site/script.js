@@ -1,4 +1,9 @@
 // Define a data alvo
+function toggleMenu() {
+  var menu = document.querySelector('.container-menu');
+  menu.classList.toggle('show');
+}
+
 const dataAlvo = new Date('September 15, 2024 07:00:00').getTime();
 
 // Atualiza o contador a cada segundo
