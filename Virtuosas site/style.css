@@ -63,12 +63,12 @@ body{
 
 /* CABEÇALHO */
 .logo-imagem {
-    height: 60px;
+    height: 80px;
 }
 .container-Head{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: flex-start;
 }
 .container-menu {
     background-color: #E665A5;
@@ -92,6 +92,7 @@ body{
     display: flex;
     justify-content: center;
     flex-direction: row;
+    padding: 10px 010px 0;
     gap: 4.44vw;
 }
 
@@ -103,6 +104,9 @@ body{
 
 /* Estilos para telas menores que 786px */
 @media (max-width: 786px) {
+    .container-Head{
+        justify-content: center;
+    }
     .container-menu {
         height: auto;
         flex-direction: column; /* Alinha o conteúdo verticalmente */
@@ -718,6 +722,7 @@ ul{
     width: 100%;
     height: 100%;
     background-image: url(src/opacity-insta.png);
+    background-position: center;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -747,6 +752,8 @@ ul{
         gap: 16px;
 
     }
+
+
     .container-instagramvirt{
         width: 100%;
         display: flex;
