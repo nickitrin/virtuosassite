@@ -82,6 +82,23 @@ body{
     font-size: 1.4vw;
 }
 
+@media (max-width: 786px) {
+    .container-menu{
+
+        height: 100%;
+    }
+    .container-menulista{
+
+        flex-direction: column;
+
+    }
+    .item-listamenu{
+
+        font-size: 16px;
+    }
+    
+}
+
 
 /* INSCRITAS */
 .container-inscr{
@@ -197,6 +214,16 @@ body{
     display: flex;
     flex-direction: row;
 }
+
+.container-infoeventoendereco{
+    display: flex;
+    flex-direction: row;
+    font-size: 20px;
+    color: #8B8B8B;
+    margin-top: 12px;
+    align-self: flex-end;
+}
+
 @media (max-width: 1120px) {
     .container-periodonome {
         font-size: 1.66vw;
@@ -206,14 +233,88 @@ body{
     }
 
 }
-.container-infoeventoendereco{
-    display: flex;
-    flex-direction: row;
-    font-size: 20px;
-    color: #8B8B8B;
-    margin-top: 12px;
-    align-self: flex-end;
+
+@media (max-width: 786px) {
+    .container-infoevento{
+        display: flex;
+        flex-direction: column;
+        background-color: #FFE8F0;
+        padding: 0;
+        width: 95%;
+        border-radius: 8px;
+    
+    }
+    .container-periodonome {
+        font-size: 16px;
+    }
+    .container-periodoinfo{
+
+        font-size: 24px;
+        color: #CD7B0F;
+    
+    }
+
+    .container-periodoprinc{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        margin: 20px 20px 0 20px;
+    }
+
+    .container-infoeventoendereco{
+        display: flex;
+        flex-direction: row;
+        font-size: 2.0vh;
+        color: #8B8B8B;
+        margin: 10px 20px 20px 0;
+        align-self: flex-end;
+    }
+
 }
+@media (max-width:440px) {
+    .container-periodoinfo{
+
+        font-size:14px;
+        color: #CD7B0F;
+    
+    }
+    .container-infoeventoendereco{
+        display: flex;
+        flex-direction: row;
+        font-size: 12px;
+        color: #8B8B8B;
+        margin: 10px 20px 20px 0;
+        align-self: flex-end;
+    }
+    .container-periodonome {
+        font-size: 14px;
+    }
+
+        
+    }
+
+    @media (max-width:496px) {
+        .container-periodoinfo{
+    
+            font-size:16px;
+            color: #CD7B0F;
+        
+        }
+        .container-infoeventoendereco{
+            display: flex;
+            flex-direction: row;
+            font-size: 12px;
+            color: #8B8B8B;
+            margin: 10px 20px 20px 0;
+            align-self: flex-end;
+        }
+        .container-periodonome {
+            font-size: 16px;
+        }
+    
+            
+        }
+
 
 
 
@@ -257,8 +358,60 @@ body{
     font-size: 16px;
     text-align: justify;
     padding: 0 3.61vw 0 3.61vw;
-    font-size: 1.11vw;
+    font-size: 16px;
 }
+
+@media (max-width:786px) {
+    .container-titulorosa{
+        font-size: 32px;
+        padding: 0 3.61vw 0 3.61vw;
+        color: #E665A5;
+        
+        margin-bottom: 12px;
+        
+    }
+    #titulooqvirt{
+        color: white;
+    }
+    .container-textorosa{
+        font-size: 16px;
+        text-align: justify;
+        padding: 0 3.61vw 0 3.61vw;
+        font-size: 16px;
+    }
+
+    .container-fundooqueevirtuosas{
+        width:100%;
+        background-image: none;
+        background-position: center;
+        border-radius: 0;
+    }
+    .container-oqueevirtuosas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items:flex-start;
+        padding: 20px 0 20px 0;
+        width: 100%;
+        height: auto;
+        margin: 0;
+        color: white;
+        background-color: #E665A5;
+        border-radius: 0;
+    }
+
+}
+
+@media (max-width:488px) {
+    .container-titulorosa{
+        font-size: 32px;
+        padding: 0 3.61vw 0 3.61vw;
+        color: #E665A5;
+        margin-bottom: 12px;
+    }
+        
+    }
+
 
 
 /* COMO CHEGAR */
@@ -270,7 +423,7 @@ body{
 }
 .container-periodoinfo2{
 
-    font-size: 3.33vw;
+    font-size: 48px;
     color: #CD7B0F;
     padding: 0 3.61vw 0 3.61vw;
 
@@ -302,8 +455,45 @@ body{
         border:0;
 
     }
+    .container-infoeventoendereco2{
+        display: flex;
+        flex-direction: row;
+        font-size: 16px;
+        color: #8B8B8B;
+        margin-top: 12px;
+        margin-bottom: 22px;
+        padding: 0 3.61vw 0 3.61vw;
+    }
 
 }
+@media (max-width:786px) {
+    .container-chegar{
+        display: flex;
+        flex-direction: column;
+        gap:1.11vw;
+        width: 95%;
+    }
+    
+    .container-chegarmapa{
+        display: flex;
+        width: 100%;
+        border:0;
+
+    }
+    .container-chegartexto{
+        padding-top: 16px;
+        padding-bottom: 16px ;
+    }
+    .container-periodoinfo2{
+
+        font-size: 48px;
+        color: #CD7B0F;
+        padding: 0 3.61vw 0 3.61vw;
+    
+    }
+
+}
+
 
 
 
@@ -339,7 +529,39 @@ ul{
     padding-right: 10px;
     color: #E665A5;
 }
+@media (max-width:786px) {
+    .container-itens{
+        width: 95vw;
+    }
 
+    .container-listaproibidos{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+    .container-itenslista{
+        
+        width: 95%;
+    }
+    .container-itenstitulo{
+        display: flex;
+        padding: 0;
+        margin-bottom: 32px;
+        flex-direction: row;
+        font-size: 6.4vw;
+        color: #CD7B0F;
+    }
+}
+@media (max-width:440px) {
+    .container-itenstitulo{
+        display: flex;
+        padding: 0;
+        margin-bottom: 32px;
+        flex-direction: row;
+        font-size: 32px;
+        color: #CD7B0F;
+    }
+}
 
 
 /* REDES SOCIAIS */
@@ -446,7 +668,74 @@ ul{
     flex-direction: row;
 }
 
+@media (max-width:786px) {
+    .container-redessociais{
+        width: 95%;
+    }
+    .container-instagramtotal{
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
 
+    }
+    .container-instagramvirt{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #FFE8F0;
+        border-radius: 8px;
+        
+    }
+    .container-instagramparo{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #F8EEE2;
+        border-radius: 8px;
+    
+    }
+    .button-instavirt{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 8px;
+        width: 90%;
+        height: 17.77vw;
+        background-color: #E665A5;
+        text-decoration: none;
+        color: white;
+        font-family: 'Bebas Neue';
+        font-size: 5.33vw;
+        border-radius: 8px;
+        margin-bottom: 32px;
+    }
+    .button-instaparo{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        gap: 8px;
+        align-items: center;
+        width: 90%;
+        height: 17.77vw;
+        background-color: #F6CFA0;
+        text-decoration: none;
+        color: white;
+        font-family: 'Bebas Neue';
+        font-size: 5.33vw;
+        border-radius: 8px;
+        margin-bottom: 32px;
+    
+    }
+    .logo-insta-button{
+        height: 8.88vw;
+    }
+    
+}
 
 
 /* SPOTIFY */
@@ -464,6 +753,17 @@ ul{
     align-self: center;
     margin-bottom:32px ;
     width: 96%;
+}
+
+@media (max-width:786px) {
+    .container-spotify{
+        display: flex;
+        flex-direction: column;
+        background-color: #FFE8F0;
+        border-radius: 8px;
+        width: 95%;
+    
+    }
 }
 
 
@@ -503,7 +803,33 @@ ul{
 .imagem-fundo-cravo{
     height: 30vw;
 }
-
+@media (max-width:786px) {
+   
+    .container-textopatrocionio {
+        color: #E665A5;
+        margin-bottom: 32px;
+        font-size: 4vw;
+    }
+    .container-conteudopatrocionio {
+        z-index: 1; /* Coloca o conteúdo acima das imagens */
+        display: flex;
+        flex-direction: column;
+        margin-top: 0;
+        width: 60%;
+    }
+    .button-patrocinador {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 12.72vw;
+        border-radius: 8px;
+        background: linear-gradient(92deg, #CD7B0F 0%, #91560A 100%);
+        font-family: 'Bebas Neue';
+        color: white;
+        text-decoration: none;
+        font-size: 4.58vw;
+    }
+}
 
 /* RODAPE*/
 .container-footer{
