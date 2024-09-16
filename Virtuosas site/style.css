@@ -56,7 +56,7 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 64px 0 64px 0;
+    margin: 0 0 64px 0;
     gap: 64px;
 }
 
@@ -153,11 +153,11 @@ body{
     flex-direction: row;
     justify-content: center;
     background-size: cover;
-    align-items: flex-end;
-    background-image: url('src/Group\ 12.png');
+    align-items: center;
+    background-image: url('src/AINDABEMQEV.png');
     font-family: 'Bebas Neue';
     color: #E665A5;
-    height: 16.11vw;
+    height: 30vw;
 }
 .container-cronometrodiaslinha{
     display: flex;
@@ -173,6 +173,7 @@ body{
 }
 .faltamtexto{
     color: white;
+    font-size: 90px;
 }
 .container-cronometrotexto{
     display: flex;
@@ -200,6 +201,9 @@ body{
         font-size: 10vw;
 
     }
+}
+.banner_vim{
+    height: 350px;
 }
 .barra-container {
     width: 80%;
