@@ -408,6 +408,20 @@ body{
     text-decoration: none;
     font-size: 36px;
 }
+@media (max-width:786px) {
+    .button-inscrevase {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 12.72vw;
+        border-radius: 8px;
+        background:#30434A;
+        color: white;
+        text-decoration: none;
+        font-size: 3.4vw;
+    }
+}
+
 
 /* SOBRE O EVENTO */
 .container-sobre{
