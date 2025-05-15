@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Galeria de Fotos</title>
+  <style>
+    body {
+      font-family: sans-serif;
+      background: #f9f9f9;
+      margin: 0;
+      padding: 20px;
+    }
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+      gap: 15px;
+    }
+    .galeria img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .galeria img:hover {
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+
+<h1>Galeria do Evento</h1>
+
+<div class="galeria">
+  <img src=""" alt="Foto 1">
+  <img src="https://drive.google.com/uc?export=view&id=ID_DA_IMAGEM_2" alt="Foto 2">
+  <img src="https://drive.google.com/uc?export=view&id=ID_DA_IMAGEM_3" alt="Foto 3">
+  <!-- Adicione mais imagens aqui -->
+</div>
+
+</body>
+</html>
