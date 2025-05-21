@@ -514,7 +514,7 @@ body{
 
 /*Youtube*/
 .container-youtube{
-    width:80vw; 
+    width:75vw; 
     height:40vw;
 }
 @media (max-width:440px) {
