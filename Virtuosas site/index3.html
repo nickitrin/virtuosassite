@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Animação Números</title>
+<style>
+  body {
+    background: #222;
+    color: white;
+    font-family: Arial, sans-serif;
+  }
+  .container-numerosvirtuosas {
+    display: flex;
+    justify-content: space-between;
+    width: 73vw;
+    margin: 50px auto;
+  }
+  .container-numerosvirtuosassessao,
+  .container-numerosvirtuosassessao3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    font-size: 32px;
+  }
+  .container-numerosvirtuosassessao {
+    border-right: 1px solid white;
+    padding-right: 5vw;
+  }
+  img {
+    width: 50px;
+    margin-bottom: 10px;
+  }
+</style>
+</head>
+<body>
+
+<div class="container-numerosvirtuosas">
+  <div class="container-numerosvirtuosassessao">
+    <img src="src/womanvector.svg" alt="Mulheres" />
+    <p id="numero-mulheres">+3000</p>
+    <p>Mulheres Alcançadas</p>
+  </div>
+  <div class="container-numerosvirtuosassessao">
+    <img src="src/medalvector.svg" alt="Edições" />
+    <p id="numero-edicoes">+6</p>
+    <p>Edições</p>
+  </div>
+  <div class="container-numerosvirtuosassessao3">
+    <img src="src/marketvector.svg" alt="Patrocinadores" />
+    <p id="numero-patrocinadores">+10</p>
+    <p>Patrocinadores</p>
+  </div>
+</div>
+
+<script>
+function animarNumero(elemento, valorFinal, duracao) {
+  let start = 0;
+  const passo = Math.ceil(valorFinal / (duracao / 16));
+
+  function atualizar() {
+    start += passo;
+    if (start >= valorFinal) {
+      elemento.textContent = "+" + valorFinal.toLocaleString();
+    } else {
+      elemento.textContent = "+" + start.toLocaleString();
+      requestAnimationFrame(atualizar);
+    }
+  }
+
+  atualizar();
+}
+
+window.addEventListener('load', () => {
+  const numeros = [
+    { id: 'numero-mulheres', valor: 3000 },
+    { id: 'numero-edicoes', valor: 6 },
+    { id: 'numero-patrocinadores', valor: 10 },
+  ];
+
+  numeros.forEach(({ id, valor }) => {
+    const el = document.getElementById(id);
+    if (el) {
+      el.textContent = "+0";
+      animarNumero(el, valor, 2000);
+    }
+  });
+});
+</script>
+
+</body>
+</html>

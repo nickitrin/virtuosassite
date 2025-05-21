@@ -62,7 +62,6 @@ body{
     background-color: #4C6F77;
     font-family: 'Mick Caster';
     overflow-x: hidden;
-    
 }
 
 .container-conteudo{
@@ -77,7 +76,7 @@ body{
 
 /* CABEÇALHO */
 .logo-imagem {
-    width: 30vw;
+    height: 80px;
 }
 .container-Head{
     display: flex;
@@ -128,17 +127,6 @@ body{
 @media (max-width: 786px) {
     .container-Head{
         justify-content: center;
-    }
-
-    html, body {
-        width: 100%;
-        max-width: 100%;
-        overflow-x: hidden !important;
-        position: relative;
-    }
-
-    .logo-imagem {
-    width: 100%;
     }
     .container-menu {
         height: auto;
@@ -284,7 +272,6 @@ body{
         font-size: 10vw;
     }
     .container-cronometrohoraslinha{
-
      font-size: 20vw;
     }
 
@@ -424,14 +411,12 @@ body{
     .container-infoevento{
         display: flex;
         flex-direction: column;
-        background-color: #557A81;
+        background-color: #30434A;
         padding: 0;
-        width: 90%;
+        width: 95%;
         border-radius: 8px;
     
     }
-
-        
     .container-periodonome {
         font-size: 16px;
     }
@@ -465,14 +450,6 @@ body{
     
             font-size:20px;
             color: #f7efe2;
-        
-        }
-        
-        .container-periodo{
-    
-            font-size:20px;
-            color: #f7efe2;
-            margin-left:5px;
         
         }
         .container-infoeventoendereco{
@@ -512,18 +489,7 @@ body{
                 
             }
 
-/*Youtube*/
-.container-youtube{
-    width:80vw; 
-    height:40vw;
-}
-@media (max-width:440px) {
-    .container-youtube{
-    width:90vw; 
-    height:50vw;
-}
-    
-}
+
 
 /* SOBRE O EVENTO */
 .container-sobre{
@@ -654,32 +620,6 @@ body{
     color: white;
     font-size: 32px;
 }
-
-
-@media (max-width:980px) {
-        .container-numerosvirtuosas{
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            width: 73vw;
-            color: white;
-        }
-
-        .container-numerosvirtuosassessao{
-            display: flex;
-            flex-direction: column;
-            height: 150px;
-            border-right: none;
-            border-bottom: 1px solid white;
-            justify-content: space-between;
-            padding: 3vw 0vw 3vw 0;
-            align-items: center;
-            color: white;
-            font-size: 32px;
-        }
-
-    }
-
 
 /* COMO CHEGAR */
 .container-chegar{
@@ -1081,240 +1021,6 @@ body{
     font-size: 28px;
     margin-right: 320px;
     padding-bottom: 40px;
-}
-@media (max-width: 980px){
-    .container-footer{
-    display: flex;
-    flex-direction: column;
-    gap: 10vw;
-    background-color: #30434A;
-    padding: 100px 50px;  
-    } 
-
-    .container-footercl2{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    padding-left:0px ;
-    color: white;
-    }
-    .item-listamenuft{
-        font-size: 5vw;
-    }
-    .container-listamenuft{
-        gap: 1vw;
-    }
-    .container-footercldesc{
-        font-size: 5vw;
-    }
-    .container-footercltitle{
-        font-size: 6vw;
-    }
-}
-
-/* Responsividade geral */
-@media (max-width: 1024px) {
-  .container-conteudo {
-    gap: 32px;
-    margin-bottom: 32px;
-  }
-
-  .container-titleinscricoes {
-    font-size: 48px;
-    padding-left: 5vw;
-  }
-
-  .button-inscrevase {
-    width: 90vw;
-    height: 80px;
-    font-size: 28px;
-  }
-
-  .container-inscricoes {
-    width: 90vw;
-    height: auto;
-    flex-direction: column;
-    gap: 16px;
-  }
-
-  .container-ingressovalor {
-    width: 80vw;
-    font-size: 32px;
-    padding: 24px;
-  }
-
-  .container-ingressoinfo {
-    font-size: 18px;
-    margin-left: 5vw;
-  }
-
-  .container-infoevento {
-    width: 90vw;
-    padding: 32px 4vw;
-  }
-
-  .container-periodonome {
-    font-size: 24px;
-    margin-left: 8px;
-  }
-
-  .container-periodoinfo {
-    font-size: 32px;
-  }
-
-  .container-infoeventoendereco {
-    font-size: 20px;
-    margin-top: 8px;
-  }
-
-  .container-capahead {
-    height: 60vw;
-    font-size: 4vw;
-  }
-
-  .container-cronometro {
-    height: auto;
-    flex-wrap: wrap;
-    gap: 16px;
-  }
-
-  .container-cronometrodiaslinha,
-  .container-cronometrohorariolinha,
-  .container-cronometrohorariolinha2 {
-    font-size: 5vw;
-        margin: 0;
-    padding: 16px;
-  }
-
-  .container-cronometrotexto {
-    font-size: 4vw;
-  }
-}
-
-@media (max-width: 600px) {
-  .container-titleinscricoes {
-    font-size: 36px;
-    padding-left: 3vw;
-  }
-
-  .button-inscrevase {
-    width: 95vw;
-    height: 60px;
-    font-size: 20px;
-  }
-
-  .container-inscricoes {
-    width: 95vw;
-    flex-direction: column;
-  }
-
-  .container-ingressovalor {
-    width: 95%;
-    font-size: 24px;
-    padding: 2vw 1vw;
-  }
-
-  .container-ingressoinfo {
-    margin-left: 2vw;
-    font-size: 14px;
-  }
-
-  .container-infoevento {
-    width: 90vw;
-    padding: 16px 2vw;
-  }
-
-  .container-periodonome {
-    font-size: 18px;
-    margin-left: 4px;
-  }
-
-  .container-periodoinfo {
-    font-size: 24px;
-  }
-
-  .container-infoeventoendereco {
-    font-size: 14px;
-    margin-top: 4px;
-  }
-
-  .container-capahead {
-    height: 80vw;
-  }
-
-  .container-cronometro {
-    height: auto;
-  }
-
-  .container-cronometrodiaslinha,
-  .container-cronometrohorariolinha,
-  .container-cronometrohorariolinha2 {
-    font-size: 8vw;
-    padding: 8px;
-  }
-
-  .container-cronometrotexto {
-    font-size: 6vw;
-  }
-
-  .container-titulorosa {
-    font-size: 24px;
-    padding: 0 2vw;
-  }
-
-  .container-textorosa {
-    font-size: 14px;
-    padding: 0 2vw;
-  }
-
-  .container-fundooqueevirtuosas {
-    width: 100%;
-    background-image: none;
-  }
-
-  .container-oqueevirtuosas {
-    width: 100%;
-    height: auto;
-
-  }
-
-  .fotooqueevirtuosas {
-    width: 100%;
-    height: 40vw;
-    padding: 16px 0 8px 0;
-  }
-}
-
-/* Menu Responsivo */
-@media (max-width: 786px) {
-  .container-menu {
-    flex-direction: column;
-    height: auto;
-  }
-
-  .container-menulista {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    background-color: #30434A;
-  }
-
-  .menu-icon {
-    display: block;
-    position: absolute;
-    right: 20px;
-    top: 15px;
-  }
-
-  .container-menu.show .container-menulista {
-    display: flex;
-  }
-
-  .item-listamenu {
-    font-size: 18px;
-    padding: 12px 0;
-    text-align: center;
-  }
 }
 
 
